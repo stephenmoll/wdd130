@@ -17,8 +17,8 @@ Fonts are separated by a & */
   --paragraph-font: Lato, Inter Tight:wght@300;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #172a3a;  /* headlines on a white background */ 
-  --headline-color-on-color: #508991; /* headlines on a colored background */ 
+  --headline-color-on-white: #508991;  /* headlines on a white background */ 
+  --headline-color-on-color:  #172a3a; /* headlines on a colored background */ 
   --paragraph-color-on-white: #74b3ce; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #172a3a; /* paragraph text on a colored background */ 
   --paragraph-background-color: #74b3ce  ;
