@@ -1,4 +1,5 @@
 #content {
+    display: block;
     margin: 0 auto;
     max-width: 1600px;  
 }
@@ -14,6 +15,9 @@ nav a{
 #hero-msg h1, #hero-msg h4{
     text-align: center; 
     color:#172a3a;
+}
+#hero-img{
+    width: 100%
 }
 .button-box{
     text-align: center; 
@@ -44,7 +48,7 @@ nav a:hover {
     color: #172a3a;
 }
 #background{
-    background-color: #ffffff ;
+    background-color: tan;
 }
 .msg{
     background-color: #508991;
