@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Rock+Salt&display=swap');
+.logo{
+   width: 80px 
+}
 #logo_link {
     padding-top: 5px;
 }    
