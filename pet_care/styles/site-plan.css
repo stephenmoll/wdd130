@@ -6,10 +6,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #FF8800   ;
+  --primary-color:  #6f7364  ;
   --secondary-color: #668EB9 ;
-  --accent1-color: #73CFF8;
-  --accent2-color: #FFE2D2;
+  --accent1-color: white;
+  --accent2-color: #FF8800;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Merriweather";
