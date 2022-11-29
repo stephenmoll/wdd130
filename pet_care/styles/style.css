@@ -12,7 +12,7 @@
     background-color: #668EB9;
     height: 15vh;   
     color: white;
-    font-size: 70px;
+    font-size: 5vh;
     text-decoration: none;
     font-family: 'Poppins', sans-serif; 
     text-align: center;
@@ -23,7 +23,7 @@ li{
 }
 
 .logo {
-    height: 150px;
+    height: 13vh;
     border-radius: 70px;
     margin-top: 6px; 
     margin-left: 6px;
@@ -31,6 +31,7 @@ li{
 
 li a:visited {
     color: var(--primary-color);
+    
 }
 ul{
     list-style-type: none;
@@ -91,9 +92,11 @@ p{
     background-color: #6f7364;
     height: 15vh;   
     color: white;
-    font-size: 40px;
+    font-size: 3vh;
     display: flex;
     text-decoration: none;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
 }
+                    
+  
