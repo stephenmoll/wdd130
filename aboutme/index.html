@@ -4,17 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About me</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body> 
-    <h1>About Me</h1>
-    <img alt="Image of me?" src="images/77156143_10215109147110260_4135861576844443648_n.jpg">
-    <h2>Stephen Moll</h2>
-    <h2>Steve</h2>
-    <p>Hello everyone, I'm Stephen. I'm from Cape Town, South Africa. I am a single parent of two boys. My hobbies are biology, zoology, physics, and other sciences. 
-    <P>To add to my hobbies, I also enjoy hiking and being in nature. I have a particular interest in reptiles, and keep many types which I use in giving educational talks to the public... I enjoy sharing my passion with others.</p></P>    
-    <p>I have a degree in biochemistry and microbiology, but have never really used this degree. I am also currently studying zoology, and also software and web development</p>
-    <p>My plan is to work towards one day becoming a Zoology lecturer and researcher, and to also work in software development.</p>
+    <div class = "main">
+        <h1>About Me</h1>
+        <img alt="Image of me?" src="images/77156143_10215109147110260_4135861576844443648_n.jpg">
+        <h2>Stephen Moll</h2>
+        <h2>Steve</h2>
+        <p>Hello everyone, I'm Stephen. I'm from Cape Town, South Africa. I am a single parent of two boys. My hobbies are biology, zoology, physics, and other sciences. 
+        <P>To add to my hobbies, I also enjoy hiking and being in nature. I have a particular interest in reptiles, and keep many types which I use in giving educational talks to the public... I enjoy sharing my passion with others.</p></P>    
+        <p>I have a degree in biochemistry and microbiology, but have never really used this degree. I am also currently studying zoology, and also software and web development</p>
+        <p>My plan is to work towards one day becoming a Zoology lecturer and researcher, and to also work in software development.</p>
+    </div>
     
+     <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="images/12363204_1013803215345704_2378271889075357566_o.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="images/26734447_10154500091879229_3601963667264956406_n.jpg" style ="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="images/IMG_20180922_145945.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="images/IMG_20181211_095059.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="images/IMG_20210517_110140.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="images/IMG_20210517_141717.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src= "images/12363204_1013803215345704_2378271889075357566_o.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/26734447_10154500091879229_3601963667264956406_n.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/IMG_20180922_145945.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/IMG_20181211_095059.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/IMG_20210517_110140.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/IMG_20210517_141717.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
+  </div> 
+  <script> let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }</script>
 </body>
 </html> 
