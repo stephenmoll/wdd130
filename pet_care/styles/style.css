@@ -113,6 +113,8 @@ p{
     grid-template-columns: 1fr 1fr;
     background-color: #FFE2D2;
     width: 100%;
+    
+
 }
 .directory_links{
     display: flex;
@@ -172,4 +174,70 @@ p a{
 }  
 .content2 p a{
     color: white;
+}
+.Veterinary_header{
+    color: #6f7364;
+    align-items: center;
+    font-size: 50px;
+    
+    grid-column: 1/3;
+    text-align: center; 
+       
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif; 
+}
+.deviding_grid_2{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FFE2D2;
+    width: 100%;
+}
+.Veterinary_links{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-around;
+
+}
+
+.injured_iguana{
+    width: 30%;
+    align-self: center;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+.left_Veterinary{
+    margin: 0px;
+    margin-left: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    
+}
+.right_veterinary{
+    
+    margin: 0px;
+    margin-left: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    
+}
+.Veterinary_links p{
+    
+    color:black;
+    margin: 0px;
+    line-height: 1.7em
+}    
+.sick_dog{
+    width: 100%;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
 }
